@@ -58,7 +58,6 @@ final class Article extends AggregateRoot
         $this->recordAndApply(new ArticleDeleted());
     }
 
-
     protected function applyArticleCreated(ArticleCreated $event): void
     {
         $this->id = $event->getId();
@@ -89,6 +88,5 @@ final class Article extends AggregateRoot
         $this->deleted = true;
         $this->updatedAt = $event->occurredAt();
     }
-
 
 }
