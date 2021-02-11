@@ -22,23 +22,30 @@ abstract class UuidId implements Id
         }
     }
 
-    public static function generate(): static
+    public static function generate(): Id
     {
         return new static(Uuid::uuid4()->toString());
     }
 
-    public function createFromString(string $value): static
+    public static function createFromString(string $value): Id
     {
         return new static($value);
     }
 
     public function equals(Id $other): bool
     {
-        return $this::class === $other::class && $this->value() === $other->value();
+        return get_class($this) === get_class($other) && $this->value() === $other->value();
     }
 
     public function value(): string
     {
         return $this->value;
     }
+
+    public function __toString(): string
+    {
+        return $this->value;
+    }
+
+
 }

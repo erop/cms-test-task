@@ -11,7 +11,7 @@ interface Id
 
     public function equals(Id $other): bool;
 
-    public static function generate(): static;
+    public static function generate(): Id;
 
-    public function createFromString(string $value): static;
+    public static function createFromString(string $value): Id;
 }
