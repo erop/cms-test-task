@@ -28,6 +28,6 @@ class ArticleRepository extends ServiceEntityRepository implements ArticleReposi
 
     private function isNew(Article $article): bool
     {
-        return UnitOfWork::STATE_NEW === $this->_em->getUnitOfWork()->getEntityState($article);
+        return UnitOfWork::STATE_NEW === $this->_em->getUnitOfWork()->getEntityState($article, UnitOfWork::STATE_NEW);
     }
 }
