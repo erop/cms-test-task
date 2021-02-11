@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Tests\Context\Article\Domain;
+namespace App\Tests\Unit\Context\Article\Domain;
 
 
 use App\Context\Article\Domain\Article;
