@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+    database:
+        image: postgres:alpine
+        environment:
+            POSTGRES_USER: cms
+            POSTGRES_PASSWORD: cms
+            POSTGRES_DB: cms
+        ports: [ 5432 ]
