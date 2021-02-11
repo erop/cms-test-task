@@ -22,11 +22,17 @@ abstract class UuidId implements Id
         }
     }
 
+    /**
+     * @return static
+     */
     public static function generate(): Id
     {
         return new static(Uuid::uuid4()->toString());
     }
 
+    /**
+     * @return static
+     */
     public static function createFromString(string $value): Id
     {
         return new static($value);
