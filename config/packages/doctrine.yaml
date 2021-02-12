@@ -17,3 +17,8 @@ doctrine:
                 type: xml
                 dir: '%kernel.project_dir%/src/Context/Article/Infrastructure/Doctrine/Entity'
                 prefix: 'App\Context\Article\Domain'
+            context_shared:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/src/Context/Shared/Infrastructure/Doctrine/Entity'
+                prefix: 'App\Context\Shared\Domain\Event'
