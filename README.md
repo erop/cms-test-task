@@ -1,3 +1,4 @@
+- Run `symfony composer install`
 - Launch PostgreSQL Docker container with `docker-compose up -d --build`
 - Create database with `symfony console doctrine:database:create`  
 - Apply migrations with `symfony console doctrine:migrations:migrate`
