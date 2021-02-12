@@ -9,15 +9,18 @@ use App\Context\Shared\Domain\Event\DomainEvent;
 
 abstract class AggregateRoot implements Entity
 {
-    protected Id $id;
+    protected UuidId $id;
 
     protected array $events = [];
 
-    public function id(): Id
+    public function id(): UuidId
     {
         return $this->id;
     }
 
+    /**
+     * @return array|DomainEvent[]
+     */
     public function releaseEvents(): array
     {
         $events = $this->events;
