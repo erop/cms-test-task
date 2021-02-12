@@ -81,6 +81,15 @@
     "doctrine/sql-formatter": {
         "version": "1.1.1"
     },
+    "dunglas/doctrine-json-odm": {
+        "version": "0.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.1",
+            "ref": "c2ab78f625df0c89af5908d50a28602ff8c4919f"
+        }
+    },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.3"
     },
@@ -254,6 +263,12 @@
     "symfony/polyfill-php80": {
         "version": "v1.22.0"
     },
+    "symfony/property-access": {
+        "version": "v5.2.3"
+    },
+    "symfony/property-info": {
+        "version": "v5.2.3"
+    },
     "symfony/proxy-manager-bridge": {
         "version": "v5.2.3"
     },
@@ -270,6 +285,9 @@
             "config/packages/routing.yaml",
             "config/routes.yaml"
         ]
+    },
+    "symfony/serializer": {
+        "version": "v5.2.3"
     },
     "symfony/service-contracts": {
         "version": "v2.2.0"
