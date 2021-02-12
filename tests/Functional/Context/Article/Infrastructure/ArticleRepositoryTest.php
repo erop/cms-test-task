@@ -13,7 +13,7 @@ class ArticleRepositoryTest extends TestCase
 
     public function testSave(): void
     {
-        $repo = new InMemoryArticleRepository();
+        $repo = new InMemoryArticleRepository(new InMemoryEventStore());
         $article1 = new Article('First article', 'First article body', ArticleId::generate());
         $article2 = new Article('Second article', 'Second article body', ArticleId::generate());
         $repo->save($article1);
